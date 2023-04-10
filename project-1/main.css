@@ -96,10 +96,10 @@ header {
 }
 header img {
     width: 100%;
-    position: relative;
-    top: -65%;
 }
-
+.desktop {
+    display: none;
+}
 .product-info {
     padding: 2.5rem;
     display: flex;
@@ -127,6 +127,12 @@ header img {
     .product-info {
         flex-basis: 50%;
         justify-content: space-between;
+    }
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display:none;
     }
 
 }
