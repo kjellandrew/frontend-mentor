@@ -110,8 +110,25 @@ img.product-landscape {
 }
 img.product-portrait {
     display: none;
+    width: 100%;
+    border-radius: 2rem 0 0 2rem;
 }
 
-@media screen and (min-width: ) {
-    
+@media screen and (min-width: 520px ) {
+    img.product-landscape {
+        display:none;
+    }
+    img.product-portrait {
+        display: unset;
+        flex-grow: 0;
+    }
+    .container {
+        flex-direction: row;
+        max-width: none;
+        width: auto;
+        max-width: 750px;
+    }
+    .container > * {
+        flex-basis: 50%;
+    }
 }
