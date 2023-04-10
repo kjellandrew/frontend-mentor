@@ -17,6 +17,7 @@ h1.product-title {
     font-family: 'Fraunces', serif;
     font-size: 3.2rem;
     font-weight: bold;
+    margin: 0;
 }
 span.category {
     font-size: 1.2rem;
@@ -26,9 +27,10 @@ span.category {
     letter-spacing: .5rem;
 }
 p.description {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #6C7289;
-    line-height: 2.3rem;
+    line-height: 2.5rem;
+    margin: 0;
 }
 span.current-price {
     font-family: 'Fraunces', serif;
@@ -80,13 +82,18 @@ body {
 }
 
 /* Layout */
+body {
+    margin: 10rem 0;
+}
 .container {
     border-radius: 2em;
     display: flex;
-    flex-direction: column;  
-    margin: 2rem 2rem 5rem 2rem;
+    flex-direction: column; 
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: 5rem !important; 
 }
-img.product {
+img.product-landscape {
     border-radius: 2rem 2rem 0 0 ;
     width: 100%;   
 }
@@ -100,4 +107,11 @@ img.product {
     display: flex;
     align-items: center;
     gap: 2rem;
+}
+img.product-portrait {
+    display: none;
+}
+
+@media screen and (min-width: ) {
+    
 }
